@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    min-height: 100vh;
+    /* fallback universal */
+    min-height: 100svh;
+    /* Safari/iOS: viewport “pequena” estável */
+    min-height: 100dvh;
+    /* modernos: viewport dinâmica (ajusta com barra) */
+    overflow-x: hidden;
+    width: 100%;
+}
+
+#cards{
+    display: grid;
+    place-content: center;
+}
+
+.card1, .card2, .card3, .card4, .card5{
+    margin-top: 20px;
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+}
