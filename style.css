@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -15,15 +17,95 @@ html, body{
     width: 100%;
 }
 
-#cards{
+body{
     display: grid;
     place-content: center;
+    background-color: hsl(0, 0%, 81%);
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+#cards{
+    margin: 60px 30px;
+    display: grid;
+    grid-template: repeat(6, auto) / auto;
 }
 
 .card1, .card2, .card3, .card4, .card5{
-    margin-top: 20px;
-    background-color: bisque;
+    margin: 20px 0;
     padding: 10px;
     border-radius: 10px;
-    width: 50%;
+    padding: 35px;
+    box-shadow: 0 20px 24px rgba(0,0,0,.18);
+}
+
+.card1{
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+}
+
+.card2{
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+
+.card3, .card5{
+    background-color: white;
+    color: hsl(217, 19%, 35%);
+}
+
+.card4{
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(214, 17%, 92%);
+}
+
+.card2 img, .card3 img, .card3 img, .card5 img{
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 10px;
+}
+
+.card1 img{
+    border-radius: 50%;
+    border: 1px solid hsl(264, 82%, 80%);
+    margin-right: 10px;
+}
+
+.card4 img{
+    border-radius: 50%;
+    border: 1px solid hsl(263, 55%, 52%);
+    margin-right: 10px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.apresentacao{
+    margin-left: 5px;
+    font-size: 0.8em;
+}
+
+.apresentacao h3{
+    font-weight: 500;
+}
+
+.apresentacao p{
+    font-weight: 400;
+}
+
+.card2 span, .card5 span{
+    color: hsl(228, 6%, 68%);
+}
+
+.resumoRelato{
+    font-weight: 600;
+    font-size: 1.4em;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+blockquote{
+    line-height: 1.3;
 }
